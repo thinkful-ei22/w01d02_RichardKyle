@@ -14,7 +14,7 @@ console.log(filteredNames) // => ['Rich', 'Ray']
 
 
 // TASK: DEFINE YOUR FILTER FUNCTION BELOW:
-
+/*
 function filter(arr, fn) {
   const newArray = [];
 
@@ -29,14 +29,13 @@ function filter(arr, fn) {
   
   return newArray;
 }
-
+*/
 // Bonus credit!
 console.log(filter(myNames, (name => name[0] === 'R')));
 
 
 // Misunderstood bonus credit:
-/*
+
 function filter(arr, fn) {
-  return arr.map(name => (fn(name)) ? name : null).;
+  return arr.map(name => (fn(name)) ? name : '').filter(Boolean);
 }
-*/
